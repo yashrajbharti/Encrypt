@@ -41,7 +41,7 @@ function morseToEnglish(str) {
       else text.push(String.fromCharCode(morsecode.indexOf(elem) + 97));
     }
     console.log(text);
-    document.getElementById("para").textContent = text.join("").replace(/``/, " ");
+    document.getElementById("para").textContent = text.join("").replace(/[`]/g, "");
   } else {
     console.log(
       "You have inputted text string, program will convert it to Morse code"
