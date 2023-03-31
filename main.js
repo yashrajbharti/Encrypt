@@ -55,3 +55,9 @@ function morseToEnglish(str) {
     document.getElementById("para").textContent = morse.join(" ");
   }
 }
+
+function copy() {
+  var copyText = document.getElementById("para").textContent;
+
+  navigator.clipboard.writeText(copyText);
+}
