@@ -1,5 +1,5 @@
 document.getElementById("input").addEventListener("input", () => {
-  morseToEnglish(input.value);
+  morseToEnglish(input.value + " ");
 });
 
 function morseToEnglish(str) {
